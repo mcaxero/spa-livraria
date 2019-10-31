@@ -1,0 +1,30 @@
+label {
+  margin-top: 2em;
+}
+
+form{
+  margin-bottom: 2em;
+}
+
+.registro {
+  color: #D91A1A;
+  font-size: 1.1em;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #050723;
+}
+
+.h2 {
+  font-weight: 600;
+  padding-top: 2em;
+}
+
+.form-group {
+    font-size: 1em;
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+#biografia{
+  min-height: 10em;
+}

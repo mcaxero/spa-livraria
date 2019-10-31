@@ -1,25 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router'
+
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="h1">Livraria</h1>
+       <button id="button" className="btn btn-primary btn-lg" type="button"><Link to="/cadastroAutor" className="text-white">Adicionar Autor</Link></button>
     </div>
+    
   );
 }
 
