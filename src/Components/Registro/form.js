@@ -67,16 +67,19 @@ class Registro extends Component {
     render() {
         return (
             <div className="container-fluid registro">
-              <h2 className="h2 text-center">Adicionar Autor</h2>
-
-              <form onSubmit={this.enviaForm.bind(this)} method="post">
-                  <Input id="nome" type="text" name="nome" value={this.state.nome} onChange={this.setNome} label="Nome"/>                                              
-                  <Input id="dataNascimento" type="date" name="dataNascimento" value={this.state.dataNascimento} onChange={this.setDataNascimento} label="Data de Nascimento"/>                                              
-                  <Input id="biografia" type="text" name="biografia" value={this.state.biografia} onChange={this.setBiografia} label="Biografia"/>  
-                  <button type="button" className="btn btn-secondary btn-lg disabled">Cancelar</button>
-                  <button type="submit" className="btn btn-primary btn-lg">Salvar</button>
-              </form>
+              <div className="center">
+                <h2 className="h2 text-center">Adicionar Autor</h2>
+  
+                <form onSubmit={this.enviaForm.bind(this)} method="post">
+                    <Input id="nome" type="text" name="nome" value={this.state.nome} onChange={this.setNome} label="Nome"/>                                              
+                    <Input id="dataNascimento" type="date" name="dataNascimento" value={this.state.dataNascimento} onChange={this.setDataNascimento} label="Data de Nascimento"/>                                              
+                    <Input id="biografia" type="text" name="biografia" value={this.state.biografia} onChange={this.setBiografia} label="Biografia"/>  
+                    <button type="button" className="btn btn-secondary btn-lg disabled">Cancelar</button>
+                    <button type="submit" className="btn btn-primary btn-lg">Salvar</button>
+                </form>
+                
               </div>
+            </div>
       );
     }
   }
